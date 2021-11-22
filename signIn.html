@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assetsEdited\css\styleEdited.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Gign In</title>
+
+ 
+
+
+  </head>
+  <body style="background-image: url(./img/bck6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark container-fluid ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img\topgun.png" width="140" height="50" alt=""></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light fs-6" aria-current="page" href="IndexBootStrap.html"><i class="fa fa-align-justify text-warning "></i>HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fs-6" href="#"><i class="fa fa-chain text-warning"></i>SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fs-6" href="galleries.html"><i class="fa fa-th text-warning"></i>GALLERIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fs-6" href="#"><i class="fa fa-copy text-warning"></i>UNITS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fs-6" href="#"><i class="fa fa-users text-warning"></i>COMMUNITY</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="bg-image bg-dark pb-4" > 
+        <img src="img\wallpaper.jpg" class="img-fluid" alt="">  
+      </div>
+
+      <!-- SignUp Forma -->
+      <div class="container-fluid w-50  shadow-lg  bg-dark rounded mt-2 mb-2 rounded-3" id="divforma"  >
+          <h3 class="text-light text-center">Sign Up</h3>
+          <p class="text-danger text-center">Only 18+</p>
+          <div class="text-center">
+          <img src="img\topgun.png" width="140" height="50" alt=""> 
+          </div>
+         
+        <form action="" class="mt-4" id="signInForma">
+
+          <div>
+            <input type="text" id="FullName" placeholder="Name Surname" class="form-control" min="4" required>
+            <span class=" validation-error no-display" id=""></span>
+            <span class="validation-error no-display" id="spanFullName"></span>
+          </div>
+           
+  
+            
+          <div>
+            <input type="number" id="Age" placeholder="18-65" min='2'   class="form-control mt-4" required>
+            <span class=" validation-error no-display" id=""></span>
+            <span class="validation-error no-display" id="spanAge"></span>
+          </div>
+            
+          <div>
+            <input type="email" id="email" placeholder="name.surname@gmail.com" class="form-control mt-4" required>
+            <span class="validation-error no-display" id="spanEmail"></span>
+          </div>
+            
+
+       
+              <div class="input-group mt-4">
+                <span class="input-group-text " id="input-group-left-example">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="input-group-left" id="username"  required>
+              </div>
+
+              <div>
+                <input type="password" id="Password" class="mt-4 form-control" placeholder="Password" min='8' required>
+                <span class=" validation-error no-display" id=""></span>
+              </div>
+              
+              <div>
+                <input type="password" id="ConfirmPassword" class=" form-control mt-4" placeholder="Confirm Password" required>
+                <span class="validation-error no-display" id="confrimPswSpan"></span>
+              </div>
+              
+
+              <div class="form-check form-check-inline mt-4">
+                <input class="form-check-input"   style="margin-top: 50px;" type="checkbox" value="" id="inlineCheckDefault" required>
+                <label class="form-check-label text-warning" for="inlineCheckDefault">Thank you for your business. If you place an order for sales, repair, customization, or training you accept these terms and conditions. Please read them carefully. Amick’s Guns LLC is dedicated to complete customer satisfaction. We have been serving the firearms and outdoor sporting industry for over 20 years and we truly value our customers!</label>
+                
+              </div>
+
+               
+              <div class="text-center mt-5 pb-2">
+                <button class="btn btn-success"  id="submitbtn">Submit form</button>
+              </div>
+        </form>
+      </div>
+
+
+      <div class="container-fluid border border-light border-end-0 border-start-0 border-top-0" style="background-color: black;">
+        <div class="row pt-4">
+          <div class="col-2 offset-md-4 offset-xl-4 offset-lg-4 offset-sm-4">
+            <button type="button" class="btn btn-secondary w-75 btn-outline-warning fw-bold">Gun Finder</button>
+          </div>
+          <div class="col-2">
+            <button type="button" class="btn btn-secondary w-75 btn-outline-warning fw-bold">Located Dealer</button>
+          </div>
+        </div>
+          <div class="row pt-5">
+            <div class="col-2">
+              <h5 class="text-danger">PRODUCTS</h5>
+              <ul class="list-unstyled mx-3">
+                
+                <li class="nav-item"><a href="#" class="text-decoration-none text-light ">PISTOL</a></li>
+                <li class=" nav-item"><a href="#" class="text-decoration-none text-light">REVOLVERS</a></li>
+                <li class=" nav-item"><a href="#" class="text-decoration-none text-light">PISRIFLESTOLS</a></li>
+                <li class=" nav-item"><a href="#" class="text-decoration-none text-light">ACCESSORIES</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h5 class="text-danger">SUPPORT</h5>
+              <ul class="list-unstyled mx-3">
+                
+                <li class=""><a href="#" class="text-decoration-none text-light">CTALOGS</a></li>
+                <li class=""><a href="#" class="text-decoration-none text-light">CONTACT</a></li>
+                <li class=""><a href="#" class="text-decoration-none text-light">FAQS</a></li>
+                <li class=""><a href="#" class="text-decoration-none text-light">MANUALS</a></li>
+                <li class=""><a href="#" class="text-decoration-none text-light">RETURN</a></li>
+                <li class=""><a href="#" class="text-decoration-none text-light">STATEMENT</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h5 class="text-danger">SAFETY</h5>
+              <ul class="list-unstyled mx-3">
+                
+                <li class=" "><a href="#" class="text-decoration-none text-light">GUN SAFETY</a></li>
+                <li class=" "><a href="#" class="text-decoration-none text-light">RECALLS</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h5 class="text-danger">ABOUT US</h5>
+              <ul class="list-unstyled mx-3">
+                
+                <li class=""><a href="#" class="text-decoration-none text-light">OUR STORY</a></li>
+                <li class=""><a href="#" class="text-decoration-none text-light">CAREERS</a></li>
+                <li class=""><a href="#" class="text-decoration-none text-light">SUPPLIER</a></li>
+                <li class=""><a href="#" class="text-decoration-none text-light">NEWS</a></li>
+                <li class=""><a href="#" class="text-decoration-none text-light">S&W TEAM</a></li>
+                <li class=""><a href="#" class="text-decoration-none text-light">STATEMENT</a></li>
+              </ul>
+            </div>
+            <div class="col-2 offset-2 ">
+              <img src="img\logo.png" class="px-5" alt="">
+            </div>
+          </div>
+        
+      </div>
+
+      <div class="d-flex flex-column align-items-center bg-dark">
+        <h4 class="mb-2 mt-2 text-light">Follow us</h4>
+        <ul class="list-unstyled" id="socialicons">
+            <li><span class="social-icon social-facebook"><i class="fa fa-facebook"></i></span></li>
+            <li><span class="social-icon social-google"><i class="fa fa-google"></i></span></li>
+            <li><span class="social-icon social-linkedin"><i class="fa fa-linkedin"></i></span></li>
+            <li><span class="social-icon social-instagram"><i class="fa fa-instagram"></i></span></li>
+            <li><span class="social-icon social-twitter"><i class="fa fa-twitter"></i></span></li>
+        </ul>
+    </div>
+
+    
+    <div class="container-fluid p-0 m-0 bg-white">
+      <iframe style="width: 100%;;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.178721228633!2d-80.69626286262242!3d34.21845472501584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8855f95744ae5115%3A0x85f86283aeef76d6!2sTop%20Gun%20Indoor%20Pistol%20Range%20LLC!5e0!3m2!1sen!2s!4v1634065229550!5m2!1sen!2s" loading="lazy"></iframe>
+    </div>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="jsEdited\SignUp.js"></script>
+
+    <script type="text/javascript">
+      function disableBack() { window.history.forward(); }
+      setTimeout("disableBack()", 0);
+      window.onunload = function () { null };
+</script>
+  </body>
+</html>

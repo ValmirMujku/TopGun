@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+#div2 section {
+  margin-top: 20%;
+  min-height: 100vh;
+}
+#div2 section #text span {
+  position: relative;
+  display: inline-block;
+}
+
+#h1name {
+  font-size: 80px;
+  font-family: "Comforter Brush", cursive;
+  color: white;
+}
+
+/*# sourceMappingURL=PREindexStyle.css.map */
