@@ -5,6 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
+
+
+   
+
  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -18,6 +24,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 
     <title>Gallerie</title>
+
+
+    <style>
+ 
+
+       
+        </style>
+ 
   </head>
 
   
@@ -56,16 +70,11 @@
         </div>
       </nav>
 
+    
      
-
- 
-   
-        
-    
-  
-    
      
     <div class="container-fluid  " id="completeGallery">
+        <hr class="text-light">
         <h1 class="fw-bold text-center text-light">All Weapons Categories</h1>
         <hr class="bg-light">
         <h3 class="text-warning fw-bold text-center">HANDGUNS</h3>
@@ -76,7 +85,7 @@
                     <img src="imgGalleries\gun1.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(1)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun0">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true" ></i></button>
                     </div>
                 </div>
                 <div class="container-fluid " id="gun0Details" style="display: none;">
@@ -93,7 +102,7 @@
                     <img src="imgGalleries\gun2.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(2)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun1">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1 " id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun1Details" style="display: none;">
@@ -110,7 +119,7 @@
                     <img src="imgGalleries\gun3.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(3)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun2">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1 " id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun2Details" style="display: none; ">
@@ -127,7 +136,7 @@
                     <img src="imgGalleries\gun4.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(4)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun3">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1 " id="buyBtn" >BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun3Details" style="display: none;">
@@ -146,7 +155,7 @@
                     <img src="imgGalleries\gun5.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(5)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun4">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1 " id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun4Details" style="display: none;">
@@ -163,7 +172,7 @@
                     <img src="imgGalleries\gun6.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(6)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun5">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun5Details" style="display: none; ">
@@ -180,7 +189,7 @@
                     <img src="imgGalleries\gun7.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(7)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun6">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun6Details" style="display: none; ">
@@ -197,7 +206,7 @@
                     <img src="imgGalleries\gun8.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(8)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun7">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun7Details" style="display: none; ">
@@ -217,7 +226,7 @@
                     <img src="imgGalleries\gun9.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(9)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun8">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun8Details" style="display: none; ">
@@ -234,7 +243,7 @@
                     <img src="imgGalleries\gun10.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(10)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun9">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun9Details" style="display: none; ">
@@ -251,7 +260,7 @@
                     <img src="imgGalleries\gun11.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(11)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun10">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun10Details" style="display: none; ">
@@ -268,7 +277,7 @@
                     <img src="imgGalleries\gun12.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(12)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun11">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun11Details" style="display: none;">
@@ -288,7 +297,7 @@
                     <img src="imgGalleries\gun17.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(13)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun12">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun12Details" style="display: none; ">
@@ -305,7 +314,7 @@
                     <img src="imgGalleries\gun18.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(14)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun13">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun13Details" style="display: none;">
@@ -322,7 +331,7 @@
                     <img src="imgGalleries\gun19.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(15)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun14">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun14Details" style="display: none; ">
@@ -339,7 +348,7 @@
                     <img src="imgGalleries\gun20.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(16)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun15">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun15Details" style="display: none;">
@@ -361,7 +370,7 @@
                     <img src="imgGalleries\gunsemi1.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(17)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun16">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun16Details" style="display: none; ">
@@ -378,7 +387,7 @@
                     <img src="imgGalleries\gunsemi2.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(18)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun17">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun17Details" style="display: none;">
@@ -395,7 +404,7 @@
                     <img src="imgGalleries\gunsemi3.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(19)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun18">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun18Details" style="display: none; ">
@@ -412,7 +421,7 @@
                     <img src="imgGalleries\gunsemi4.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(20)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun19">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun19Details" style="display: none;">
@@ -431,7 +440,7 @@
                     <img src="imgGalleries\gunsemi5.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(21)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun20">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun20Details" style="display: none; ">
@@ -448,7 +457,7 @@
                     <img src="imgGalleries\gunsemi6.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(22)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun21">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun21Details" style="display: none;">
@@ -465,7 +474,7 @@
                     <img src="imgGalleries\gunsemi7.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(23)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun22">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun22Details" style="display: none; ">
@@ -482,7 +491,7 @@
                     <img src="imgGalleries\gunsemi8.jpg" alt="" class="img-thumbnail cursor bg-dark " style="cursor: pointer;"  onclick="openModal();currentSlide(24)">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <span class="badge bg-warning rounded-pill mt-2 mb-2 text-dark fw-bold fs-6" id="btnGun23">EXTRA DETAILS</span>
-                        <button type="button" class="btn btn-danger  fw-bold mt-1">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger  fw-bold mt-1" id="buyBtn">BUY NOW <i class="fa fa-shopping-cart text-dark" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun23Details" style="display: none;">
@@ -495,14 +504,9 @@
             </div> 
         </div>
 
-        
-
-        
     </div> 
 
-
-
-
+    
 
     <div class="container-fluid modal bg-dark" id="myModal">
         <span class="close cursor text-light fw-bold position-absolute text-decoration-none  mt-0" style="  right:25px; cursor: pointer; font-size: 50px;" onclick="closeModal()">&times;</span>
@@ -634,7 +638,7 @@
         </div>
     </div>
 
-    
+
 
     <div class="container-fluid border border-light border-end-0 border-start-0 border-top-0" style="background-color: black;">
         <div class="row pt-4">
@@ -712,15 +716,70 @@
     <div class="container-fluid p-0 m-0 bg-light">
       <iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.178721228633!2d-80.69626286262242!3d34.21845472501584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8855f95744ae5115%3A0x85f86283aeef76d6!2sTop%20Gun%20Indoor%20Pistol%20Range%20LLC!5e0!3m2!1sen!2s!4v1634065229550!5m2!1sen!2s" loading="lazy"></iframe>
     </div>
+
+
+    <div  class="container-fluid buyContent  position-fixed w-100 h-100 overflow-auto" id="idBuyContent">
+
+ 
+        <div class="container-fluid buyDetails m-auto w-50 bg-dark border border-light"  id="IDbuyDetails ">
+          <span class="closeDiv fw-bold float-end text-danger fs-1">&times;</span>
+          <h1 class="text-success text-center mt-2 mb-4 fw-bolder">Payment</h1>
+          <p class="text-danger text-center">No payment via PayPal/CryptoCurrencies</p>
+          <hr class="text-light">
+          <div class="container-fluid w-50 " id="PayForma">
+            <form action="" >
+                <div class="row mb-2">
+                    <div class="col-3">
+                        <i class="fa fa-cc-visa fs-1" style="color:navy;"></i>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-cc-amex fs-1" style="color:blue;"></i>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-cc-mastercard fs-1" style="color:red;"></i>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-cc-discover fs-1" style="color:orange;"></i>
+                    </div>
+                </div>
+                <input type="text" class="form-control mb-4 bord border border-danger" placeholder="(Name on Card) Name Surname" id="CardFullName">
+              </form>
+              <input type="number" name="" id="CardNumber" class="form-control mb-4 border border-danger" placeholder="(Card Number)  1111-2222-3333-4444">
+              <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control mb-4 border border-danger" placeholder="(Exp Month) March" id="CardMonth">
+                  </div>
+                  <div class="col-6">
+                    <input type="number" class="form-control mb-4 border border-danger" placeholder="(Exp Year) 2021" id="CardYear">
+                  </div>
+              </div>
+              <input type="number" name="" id="CardCVV" class="form-control mb-4 border border-danger" placeholder="(CVV) 334">
+              <h4 class="text-success fw-bold text-center  "></h4>
+              <div class="text-center">
+                <hr class="text-light">
+                <button type="button" class="btn btn-success fw-bolder fs-4 w-50 ">PAY <i class="fa fa-credit-card text-dark" aria-hidden="true"></i></button>
+              </div>
+          </div>
+          
+        </div>
+      </div>
     
   
 
     <script src="jsEdited\galleries.js"></script>
+    <script src="jsEdited\buyDetails.js"></script>
+    <script src="jsEdited\hoverDetails.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    
+
+    <script>
+        
+    </script>
      
   </body>
 </html>
