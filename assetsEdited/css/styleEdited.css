@@ -43,6 +43,12 @@ body .nav-link {
   transform: scale(1.4);
 }
 
+.CC-Error {
+  color: #02af10;
+  font-size: 15px;
+  display: block;
+}
+
 .validation-error {
   color: red;
   font-size: 15px;

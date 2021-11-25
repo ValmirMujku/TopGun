@@ -62,7 +62,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param {String | HTMLElement} element
 	 * @param {Object} opts
 	 */
-	var Cleave = function (element, opts) {
+	 var Cleave = function (element, opts) {
 	    var owner = this;
 	    var hasMultipleElements = false;
 

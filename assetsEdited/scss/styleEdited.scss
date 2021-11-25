@@ -52,6 +52,12 @@ body {
     transform: scale(1.4);
   }
 }
+ 
+.CC-Error{
+  color: rgb(2, 175, 16);
+  font-size: 15px;
+  display: block;
+}
 
 .validation-error {
   color: red;
@@ -62,6 +68,8 @@ body {
 .no-display {
   display: none;
 }
+
+
 
 .buyContent {
   display: none;
