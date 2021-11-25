@@ -37,7 +37,7 @@ for(var i=0;i<inputs.length;i++){
     const spanFullName = document.getElementById('spanFullName');
 
     inputFullName.addEventListener('keyup',()=>{
-        if((/^[a-zA-Z]+$/.test(inputFullName.value)) === false && (inputFullName.textContent.includes('')== false )){
+        if((/\d/.test(inputFullName.value)) === true  ){
             if(spanFullName.className.indexOf('no-display')!== -1){
                 spanFullName.classList.toggle('no-display');
             }

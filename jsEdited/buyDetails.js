@@ -1,4 +1,4 @@
-  // Get the modal
+ 
   var buyContent = document.getElementById("idBuyContent");
    
   let getAllButons = document.getElementById('completeGallery').getElementsByTagName('button');

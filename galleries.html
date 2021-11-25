@@ -408,9 +408,9 @@
                     </div>
                 </div>
                 <div class="container-fluid w-100" id="gun18Details" style="display: none; ">
-                    <h1 class="text-light fw-bold">GLOCK 17 CARBINE</h1>
+                    <h1 class="text-light fw-bold">GLOCK 17</h1>
                     <hr>
-               <p style="" class="text-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem expedita distinctio nemo ad quidem60 quaerat. </p>
+               <p  class="text-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem expedita distinctio nemo ad quidem60 quaerat. </p>
                <hr>
                <h4 class="text-success fw-bold">Price: 1259.99 &#36;</h4>
                 </div>
@@ -728,7 +728,7 @@
           <hr class="text-light">
           <div class="container-fluid w-50 " id="PayForma">
             <form action="" >
-                <div class="row mb-2">
+                <div class="row mb-2 mx-5">
                     <div class="col-3">
                         <i class="fa fa-cc-visa fs-1" style="color:navy;"></i>
                     </div>
@@ -742,23 +742,32 @@
                         <i class="fa fa-cc-discover fs-1" style="color:orange;"></i>
                     </div>
                 </div>
-                <input type="text" class="form-control mb-4 bord border border-danger" placeholder="(Name on Card) Name Surname" id="CardFullName">
-              </form>
-              <input type="number" name="" id="CardNumber" class="form-control mb-4 border border-danger" placeholder="(Card Number)  1111-2222-3333-4444">
+
+                <div class="mb-4">
+                    <input type="text" class="form-control bord border border-danger" placeholder="(Name on Card) Name Surname" id="CardFullName">
+                    <span class="validation-error no-display" id="spanCreditCardFullName"></span>
+                </div>
+               
+              <div class="mb-4">
+                <input type="text" name="" id="CardNumberId" class="form-control mb-4 border border-danger" placeholder="(Card Number)  1111-2222-3333-4444">
+                <span class="validation-error no-display" id="spanCreditCardNumber"></span>
+              </div>
+             
               <div class="row">
                   <div class="col-6">
-                    <input type="text" class="form-control mb-4 border border-danger" placeholder="(Exp Month) March" id="CardMonth">
+                    <input type="number" class="form-control mb-4 border border-danger" placeholder="(Exp Month) March" id="CardMonth">
                   </div>
                   <div class="col-6">
                     <input type="number" class="form-control mb-4 border border-danger" placeholder="(Exp Year) 2021" id="CardYear">
                   </div>
               </div>
-              <input type="number" name="" id="CardCVV" class="form-control mb-4 border border-danger" placeholder="(CVV) 334">
+              <input type="text" name="" id="CardCVV" class="form-control mb-4 border border-danger" placeholder="(CVV) 334">
               <h4 class="text-success fw-bold text-center  "></h4>
               <div class="text-center">
                 <hr class="text-light">
                 <button type="button" class="btn btn-success fw-bolder fs-4 w-50 ">PAY <i class="fa fa-credit-card text-dark" aria-hidden="true"></i></button>
               </div>
+            </form>
           </div>
           
         </div>
@@ -769,6 +778,10 @@
     <script src="jsEdited\galleries.js"></script>
     <script src="jsEdited\buyDetails.js"></script>
     <script src="jsEdited\hoverDetails.js"></script>
+    <script  src = 'jsEdited\CreditCard.js'></script>
+    
+
+     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
    
