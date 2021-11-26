@@ -18,7 +18,7 @@
 })();
 
 //Validimi i Credit Card Number
-
+ 
 (function CcardNrValidation() {
   var CCnR = document.getElementById("CardNumberId");
   var CCsPan = document.getElementById("spanCreditCardNumber");
