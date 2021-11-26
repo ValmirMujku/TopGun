@@ -1,26 +1,24 @@
 //Validimi i emri CC
-(function validateFullName(){
+(function validateFullName() {
+  const inputFullName = document.getElementById("CardFullName");
+  const spanFullName = document.getElementById("spanCreditCardFullName");
 
-    const inputFullName = document.getElementById('CardFullName');
-    const spanFullName = document.getElementById('spanCreditCardFullName');
+  inputFullName.addEventListener("keyup", () => {
+    if (/\d/.test(inputFullName.value) === true) {
+      if (spanFullName.className.indexOf("no-display") !== -1) {
+        spanFullName.classList.toggle("no-display");
+      }
+      spanFullName.textContent = `*Full Name should contains only letters`;
+    } else {
+      if (spanFullName.className.indexOf("no-display") === -1) {
+        spanFullName.classList.toggle("no-display");
+      }
+    }
+  });
+})();
 
-    inputFullName.addEventListener('keyup',()=>{
-        if((/\d/.test(inputFullName.value)) === true  ){
-            if(spanFullName.className.indexOf('no-display')!== -1){
-                spanFullName.classList.toggle('no-display');
-            }
-            spanFullName.textContent = `*Full Name should contains only letters`;
-        } else{
-            if(spanFullName.className.indexOf('no-display') === -1){
-                spanFullName.classList.toggle('no-display');
-            }
-        }
-    });
-}());
-
- 
 //Validimi i Credit Card Number
- 
+
 (function CcardNrValidation() {
   var CCnR = document.getElementById("CardNumberId");
   var CCsPan = document.getElementById("spanCreditCardNumber");
@@ -28,7 +26,7 @@
   var cleave = new Cleave(CCnR, {
     creditCard: true,
     onCreditCardTypeChanged: function (type) {
-    //   console.log(type);
+      //   console.log(type);
       CCnR.addEventListener("keyup", () => {
         if (type == "unknown") {
           if (CCsPan.className.indexOf("no-display") !== -1) {
@@ -45,106 +43,90 @@
   });
 })();
 
-
 //Validimi i Month
-(function CcMonthValidation(){
-    var CcInputMonth = document.getElementById('CardMonth');
-    var spanMonth = document.getElementById('spanMonth');
+(function CcMonthValidation() {
+  var CcInputMonth = document.getElementById("CardMonth");
+  var spanMonth = document.getElementById("spanMonth");
 
-    const getResult = ()=>{
-        var months = 12;
-        var count= 0;
-        var nmString = '';
-        for(var i=1;i<=months;i++){
-            nmString = i.toString();
-            if(CcInputMonth.value == nmString){
-                count++;
-            }
-        }
-        return count; 
+  const getResult = () => {
+    var months = 12;
+    var count = 0;
+    var nmString = "";
+    for (var i = 1; i <= months; i++) {
+      nmString = i.toString();
+      if (CcInputMonth.value == nmString) {
+        count++;
+      }
     }
-    getResult();
+    return count;
+  };
+  getResult();
 
-     
-    CcInputMonth.addEventListener('keyup',()=>{
-        if(getResult()==0 ){
-            if(spanMonth.className.indexOf('no-display')!== -1){
-                spanMonth.classList.toggle('no-display');
-            }
-            spanMonth.textContent = `*Month out of format(1-12)`;
-        } else{
-            if(spanMonth.className.indexOf('no-display') === -1){
-                spanMonth.classList.toggle('no-display');
-            }
-        }
-    });
-    
-}()); 
-
+  CcInputMonth.addEventListener("keyup", () => {
+    if (getResult() == 0) {
+      if (spanMonth.className.indexOf("no-display") !== -1) {
+        spanMonth.classList.toggle("no-display");
+      }
+      spanMonth.textContent = `*Month out of format(1-12)`;
+    } else {
+      if (spanMonth.className.indexOf("no-display") === -1) {
+        spanMonth.classList.toggle("no-display");
+      }
+    }
+  });
+})();
 
 // Validimi i CCYear
-(function CCyEarValidation(){
+(function CCyEarValidation() {
+  var ccYearInput = document.getElementById("CardYear");
+  var spanYear = document.getElementById("spanYear");
 
-    var ccYearInput = document.getElementById('CardYear');
-    var spanYear = document.getElementById('spanYear');
+  const getResult = () => {
+    var d = new Date();
+    var count = 0;
 
-    const getResult = ()=>{
-        var d = new Date();
-        var count  = 0;
-       
-        
-       var getNumberYear= Number(ccYearInput.value);
-        var getActualYear = d.getFullYear();
-        var results =getActualYear - getNumberYear;
-        for(var i=0;i<5;i++){
-             if(results == i){
-                 count++;
-             }
-        }
-        return count;
-
-         
+    var getNumberYear = Number(ccYearInput.value);
+    var getActualYear = d.getFullYear();
+    var results = getActualYear - getNumberYear;
+    for (var i = 0; i < 5; i++) {
+      if (results == i) {
+        count++;
+      }
     }
-     getResult() ;
+    return count;
+  };
+  getResult();
 
-    ccYearInput.addEventListener('keyup',()=>{
-        if(getResult()==0 ){
-            if(spanYear.className.indexOf('no-display')!== -1){
-                spanYear.classList.toggle('no-display');
-            }
-            spanYear.textContent = `*Expired or wrong Year`;
-        } else{
-            if(spanYear.className.indexOf('no-display') === -1){
-                spanYear.classList.toggle('no-display');
-            }
-        }
-    });
-
-}()); 
-
+  ccYearInput.addEventListener("keyup", () => {
+    if (getResult() == 0) {
+      if (spanYear.className.indexOf("no-display") !== -1) {
+        spanYear.classList.toggle("no-display");
+      }
+      spanYear.textContent = `*Expired or wrong Year`;
+    } else {
+      if (spanYear.className.indexOf("no-display") === -1) {
+        spanYear.classList.toggle("no-display");
+      }
+    }
+  });
+})();
 
 //CVV Validation
 
-(function CVVvALIDATION(){
+(function CVVvALIDATION() {
+  var inputCVV = document.getElementById("CardCVV");
+  var spanCVV = document.getElementById("spanCVV");
 
-    var inputCVV = document.getElementById('CardCVV');
-    var spanCVV = document.getElementById('spanCVV');
-
-    inputCVV.addEventListener('keyup',()=>{
-        if((/\d/.test(inputCVV.value)) === false || inputCVV.value.length != 3 ){
-            if(spanCVV.className.indexOf('no-display')!== -1){
-                spanCVV.classList.toggle('no-display');
-            }
-            spanCVV.textContent = `*CVV contains exactly 3 digits`;
-        } else{
-            if(spanCVV.className.indexOf('no-display') === -1){
-                spanCVV.classList.toggle('no-display');
-            }
-        }
-    });
-}()); 
-    
-     
-      
-    
- 
+  inputCVV.addEventListener("keyup", () => {
+    if (/\d/.test(inputCVV.value) === false || inputCVV.value.length != 3) {
+      if (spanCVV.className.indexOf("no-display") !== -1) {
+        spanCVV.classList.toggle("no-display");
+      }
+      spanCVV.textContent = `*CVV contains exactly 3 digits`;
+    } else {
+      if (spanCVV.className.indexOf("no-display") === -1) {
+        spanCVV.classList.toggle("no-display");
+      }
+    }
+  });
+})();
