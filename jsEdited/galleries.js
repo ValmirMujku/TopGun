@@ -1,6 +1,7 @@
 const getHover = document.getElementById("prevId");
 const getHoverNext = document.getElementById("nextId");
 
+//Bej background black slider buttons(next,preview)
 getHover.addEventListener("mouseover", (e) => {
   getHover.style.backgroundColor = "black";
   e.preventDefault();
@@ -21,6 +22,7 @@ getHoverNext.addEventListener("mouseout", (e) => {
   e.preventDefault();
 });
 
+
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
@@ -40,6 +42,7 @@ function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
+//Slideri
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");

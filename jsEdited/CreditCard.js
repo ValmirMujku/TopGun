@@ -23,6 +23,7 @@
   var CCnR = document.getElementById("CardNumberId");
   var CCsPan = document.getElementById("spanCreditCardNumber");
 
+  //Libraria per Credit Card JS --> cleave.js
   var cleave = new Cleave(CCnR, {
     creditCard: true,
     onCreditCardTypeChanged: function (type) {
@@ -61,6 +62,7 @@
     return count;
   };
   getResult();
+
 
   CcInputMonth.addEventListener("keyup", () => {
     if (getResult() == 0) {

@@ -67,6 +67,7 @@ for (var i = 0; i < inputs.length; i++) {
   });
 })();
 
+//Validimi i Age
 (function validateAge() {
   const inputAge = document.getElementById("Age");
   const spanAge = document.getElementById("spanAge");
@@ -110,6 +111,7 @@ for (var i = 0; i < inputs.length; i++) {
   });
 })();
 
+//Shiko a ka input te pa plotesuar
 const getNullResults = () => {
   const allInputs = document
     .getElementById("signInForma")

@@ -1,5 +1,6 @@
 // const getAllSpan = document.querySelectorAll('span');
 
+//Hover mbi produkte per details
 const getAllSpan = document
   .getElementById("completeGallery")
   .getElementsByTagName("span");
